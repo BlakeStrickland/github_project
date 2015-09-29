@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
-  root 'profiles#search'
+  # root 'profiles#search'
 
   get 'profiles/search'
 
   get 'profiles/profile'
+
+
+  get 'users/search'
+
+  post 'users/results'
+
+  root 'users#search'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
